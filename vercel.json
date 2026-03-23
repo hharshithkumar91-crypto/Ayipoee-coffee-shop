@@ -1,6 +1,10 @@
 {
-  "buildCommand": "echo 'Frontend ready'",
-  "outputDirectory": "frontend",
-  "framework": "static",
-  "public": "frontend"
+  "version": 2,
+  "builds": [
+    { "src": "frontend/**/*", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/frontend/$1" }
+  ]
 }
+

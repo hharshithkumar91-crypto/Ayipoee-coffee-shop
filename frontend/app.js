@@ -1,7 +1,9 @@
-const API = 'http://localhost:5001/api';
+const API = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+  ? 'http://localhost:5001/api'
+  : 'https://ayipoee-coffee-shop-backend.vercel.app/api'; // replace with your deployed backend URL
 let products = [];
 
-async function loadProducts() {
+async function loadProducts () {
   try {
     const res = await fetch(`${API}/products`);
     const data = await res.json();
