@@ -1,0 +1,11 @@
+body { font-family: Arial, sans-serif; margin: 0; background: #f1eee7; color: #333; }
+.container { max-width: 900px; margin: 0 auto; padding: 20px; }
+header { text-align: center; padding: 20px; background: #5a3b2d; color: #fff; border-radius: 10px; }
+h1 { margin: 0; }
+section { background: #fff; border-radius: 10px; padding: 16px; margin: 16px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+#products div { border-bottom: 1px solid #eee; padding: 8px 0; }
+input, textarea, button, select { width: 100%; margin: 8px 0; padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+button { background: #7f4b35; color: #fff; border: none; cursor: pointer; }
+#productSelects div { display: flex; align-items: center; margin: 8px 0; }
+#productSelects select, #productSelects input { width: auto; flex: 1; margin-right: 8px; }
+#productSelects button { width: auto; }

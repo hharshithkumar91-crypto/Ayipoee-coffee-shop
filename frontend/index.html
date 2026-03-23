@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayipoee Coffee Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ayipoee Coffee Shop</h1>
+      <p>Contact: useedevil04401@gmail.com | +91 8897026390</p>
+    </header>
+
+    <section id="menu-section">
+      <h2>Coffee Menu</h2>
+      <div id="products">Loading menu...</div>
+      <button id="refreshProducts">Refresh Menu</button>
+    </section>
+
+    <section id="order-section">
+      <h2>Place Order</h2>
+      <form id="orderForm">
+        <input id="customerName" placeholder="Your name" required />
+        <input id="customerEmail" type="email" placeholder="Email" />
+        <input id="customerPhone" placeholder="Phone" />
+        <div id="productSelects"></div>
+        <button type="button" id="addItem">Add Item</button>
+        <button type="submit">Submit Order</button>
+      </form>
+      <p id="orderFeedback"></p>
+    </section>
+
+    <section id="contact">
+      <h2>About Us</h2>
+      <p>Ayipoee Coffee Shop - Best coffee delivery + pickup service.</p>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
